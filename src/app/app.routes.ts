@@ -10,7 +10,6 @@ import { RouterModule } from '@angular/router';
                 redirectTo: '/ex/index',
             },
             { path: 'ex', loadChildren: 'example.bloc/ex.module#ExampleBlocModule' },
-            { path: 'error', loadChildren: 'error/error.module#ErrorModule'},
             // {path: '**', redirectTo: '/pagenotfound'}
         ]),
     ],

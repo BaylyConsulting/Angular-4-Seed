@@ -1,5 +1,4 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { CoreModule } from '../core/core.module';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -16,17 +15,9 @@ import { AppRoutingModule } from './app.routes';
     AppComponent,
   ],
   imports: [
-    BrowserModule,
     HttpClientModule,
     CoreModule,
     AppRoutingModule,
-    XpoFooterModule,
-    XpoHeaderModule,
-    XpoIconModule,
-    XpoImgModule,
-    XpoInternalAppModule,
-    XpoMainModule,
-    XpoMenuBarModule,
   ],
   providers: [
     {
