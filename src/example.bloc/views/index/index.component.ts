@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./index.component.scss'],
 })
 export class IndexViewComponent {
- public title = 'The NG Seed and What it is';
+ public title = 'Bayly Consulting Angular 4 Seed';
 }

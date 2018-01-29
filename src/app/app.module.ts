@@ -11,16 +11,6 @@ import { AppComponent } from './app.component';
 // Imports the Routing Module, this manages the initial route setting
 import { AppRoutingModule } from './app.routes';
 
-import {
-  XpoFooterModule,
-  XpoHeaderModule,
-  XpoIconModule,
-  XpoImgModule,
-  XpoInternalAppModule,
-  XpoMainModule,
-  XpoMenuBarModule,
-} from '@xpo/common';
-
 @NgModule({
   declarations: [
     AppComponent,

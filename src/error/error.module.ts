@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
-import { XpoHttpErrorModule } from '@xpo/common';
 
 import { ForbiddenViewComponent } from './403.component';
 import { NotFoundViewComponent } from './404.component';
@@ -11,7 +10,6 @@ import { ErrorRoutes } from './error.routes';
   imports: [
     CommonModule,
     ErrorRoutes,
-    XpoHttpErrorModule,
   ],
   declarations: [
     ForbiddenViewComponent,

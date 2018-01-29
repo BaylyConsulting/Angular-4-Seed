@@ -1,6 +1,5 @@
 import { async, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { XpoCommonLibrary } from '@xpo/common';
 import { IndexViewComponent } from './index.component';
 
 describe('IndexViewComponent', () => {
@@ -8,7 +7,6 @@ describe('IndexViewComponent', () => {
     TestBed.configureTestingModule({
       imports: [
         RouterTestingModule,
-        XpoCommonLibrary,
       ],
       declarations: [
         IndexViewComponent,

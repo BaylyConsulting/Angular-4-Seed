@@ -1,7 +1,6 @@
 import { async, TestBed } from '@angular/core/testing';
 import { HttpModule } from '@angular/http';
 import { RouterTestingModule } from '@angular/router/testing';
-import { XpoCommonLibrary } from '@xpo/common';
 import { ReleaseService } from '../../services/release.service';
 import { VersionViewComponent } from './version.component';
 
@@ -11,7 +10,6 @@ describe('VersionViewComponent', () => {
       imports: [
         RouterTestingModule,
         HttpModule,
-        XpoCommonLibrary,
       ],
       declarations: [
         VersionViewComponent,
