@@ -7,7 +7,7 @@ describe('testseed App', () => {
     page = new AppPage();
   });
 
-  it('should render xpo-header', () => {
+  it('should render bc-header', () => {
     page.navigateTo();
     expect(page.getHeader()).not.toBeNull();
   });

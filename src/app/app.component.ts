@@ -8,7 +8,7 @@ import { ConfigService } from '../core/index';
 })
 export class AppComponent implements OnInit {
   public cfgSettings: any;
-  public title: string = 'XPO Logistics NG Seed';
+  public title: string = 'BC Angular 5 Seed';
   public version: string = 'v2.1.0';
   public headerMenu: any = [];
   public footerMenu: any = [];

@@ -6,6 +6,6 @@ export class AppPage {
   }
 
   public getHeader() {
-    return element(by.tagName('xpo-header'));
+    return element(by.tagName('bc-header'));
   }
 }
