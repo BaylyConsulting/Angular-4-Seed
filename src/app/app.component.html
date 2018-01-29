@@ -1,7 +1,12 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-    <h1>
-        ROOT Application
-    </h1>
-</div>
-<router-outlet></router-outlet>
+<xpo-internal-app xpo-flex-stack>
+
+  <xpo-header [menuEntries]="headerMenu" logoUrl="assets/i/xpo-logo-red-white.svg">
+  </xpo-header>
+
+  <xpo-main xpo-flex-stretch>
+    <router-outlet></router-outlet>
+  </xpo-main>
+
+  <xpo-footer version="{{ version }}" [menuEntries]="footerMenu"></xpo-footer>
+
+</xpo-internal-app>

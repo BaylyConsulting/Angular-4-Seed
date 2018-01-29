@@ -1,20 +1,52 @@
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { AppRoutingModule } from './app.routes';
+import { RouterModule } from '@angular/router';
+import { CoreModule } from '../core/core.module';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { GatewayInterceptor } from '../core/interceptors/error.interceptor'
+
+// Imports the Main Application Component (This manages the layout for the application)
 import { AppComponent } from './app.component';
-import { MainModule } from './modules/main/main.module';
+
+// Imports the Routing Module, this manages the initial route setting
+import { AppRoutingModule } from './app.routes';
+
+import {
+  XpoFooterModule,
+  XpoHeaderModule,
+  XpoIconModule,
+  XpoImgModule,
+  XpoInternalAppModule,
+  XpoMainModule,
+  XpoMenuBarModule,
+} from '@xpo/common';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    CoreModule,
     AppRoutingModule,
-    MainModule
+    XpoFooterModule,
+    XpoHeaderModule,
+    XpoIconModule,
+    XpoImgModule,
+    XpoInternalAppModule,
+    XpoMainModule,
+    XpoMenuBarModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: GatewayInterceptor,
+      multi: true
+    }
+  ],
+  entryComponents: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent],
-  entryComponents: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,12 @@
+# don't change line-endings
+* text=false
+
+# explicity set files
+*.css text eol=lf
+*.html text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.lock text eol=lf
+*.md text eol=lf
+*.scss text eol=lf
+*.ts text eol=lf

@@ -1,14 +1,14 @@
 import { AppPage } from './app.po';
 
-describe('seed App', () => {
+describe('testseed App', () => {
   let page: AppPage;
 
   beforeEach(() => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should render xpo-header', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(page.getHeader()).not.toBeNull();
   });
 });

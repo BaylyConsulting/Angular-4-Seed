@@ -1,0 +1,7 @@
+
+// -- sample styling for vertical centering of xpo-http-error --
+:host {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}

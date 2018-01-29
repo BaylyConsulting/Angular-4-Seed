@@ -1,0 +1,33 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="app-container">
+
+  <xpo-card class="view-card">
+    <card-header>
+      <card-header-title>
+        <h2>XPO Logistics NG Seed Version</h2>
+      </card-header-title>
+      <card-header-subtitle>Version ( v2.0.0 ) </card-header-subtitle>
+      <card-header-actions>
+        <button xpo-btn="link">
+          <xpo-icon>action-edit</xpo-icon>
+        </button>
+      </card-header-actions>
+    </card-header>
+
+    <card-content>
+      <dl>
+        <span *ngFor="let release of releases; count as count; index as i">
+          <p>Information from the Release Service</p>
+          <h2>{{ release.title }}</h2>
+          <h4>{{ release.version }}</h4>
+          <p>{{ release.releasedate }}</p>
+          <p>{{ release.description }}</p>
+        </span>
+      </dl>
+    </card-content>
+    <card-actions>
+
+    </card-actions>
+
+  </xpo-card>
+</div>

@@ -1,0 +1,10 @@
+@import "./node_modules/@xpo/common/includes/styles/index";
+
+:host {
+  @include xpo-flex-stack();
+}
+
+
+// -- Opinionated Styles --
+::ng-deep {
+}

@@ -1,0 +1,8 @@
+{
+  "releaseList": [{
+    "version": "2.0.0",
+    "title": "XPO Logistics NG Seed For use with common ui and board 2 libraries",
+    "releasedate": "10/16/2017",
+    "description": "This is the latest version of the ng seed for use with the updated 2.0 libraries for board 2 and common, This has examples and templates preset to allow you to easily get started building a xpo angular 2/4 project"
+  }]
+}

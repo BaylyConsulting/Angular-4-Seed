@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "eg2.tslint",
+    "shinnn.stylelint",
+    "bibhasdn.git-easy",
+    "eamodio.gitlens",
+    "EditorConfig.EditorConfig",
+    "CoenraadS.bracket-pair-colorizer",
+    "Zignd.html-css-class-completion",
+    "natewallace.angular2-inline",
+    "Mikael.Angular-BeastCode",
+    "rbbit.typescript-hero",
+    "christian-kohler.path-intellisense",
+    "msjsdiag.debugger-for-chrome"
+  ]
+}

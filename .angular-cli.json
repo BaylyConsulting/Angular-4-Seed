@@ -1,58 +1,89 @@
 {
-    "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-    "project": {
-        "name": "seed"
-    },
-    "apps": [{
-        "root": "src",
-        "outDir": "dist",
-        "assets": [
-            "assets",
-            "favicon.ico"
-        ],
-        "index": "index.html",
-        "main": "main.ts",
-        "polyfills": "polyfills.ts",
-        "test": "test.ts",
-        "tsconfig": "tsconfig.app.json",
-        "testTsconfig": "tsconfig.spec.json",
-        "prefix": "app",
-        "styles": [
-            "styles.css",
-            "../node_modules/bootstrap/dist/css/bootstrap.css"
-        ],
-        "scripts": [
-            "../node_modules/bootstrap/dist/js/bootstrap.js",
-            "../node_modules/jquery/dist/jquery.min.js"
-        ],
-        "environmentSource": "environments/environment.ts",
-        "environments": {
-            "dev": "environments/environment.ts",
-            "prod": "environments/environment.prod.ts"
-        }
-    }],
-    "e2e": {
-        "protractor": {
-            "config": "./protractor.conf.js"
-        }
-    },
-    "lint": [{
-            "project": "src/tsconfig.app.json"
-        },
-        {
-            "project": "src/tsconfig.spec.json"
-        },
-        {
-            "project": "e2e/tsconfig.e2e.json"
-        }
-    ],
-    "test": {
-        "karma": {
-            "config": "./karma.conf.js"
-        }
-    },
-    "defaults": {
-        "styleExt": "css",
-        "component": {}
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "bc-angular-seed"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico",
+        "web.config"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "xpo",
+      "styles": [],
+      "scripts": [],
+      "environmentSource": "./config/environments/environment.ts",
+      "environments": {
+        "dev": "./config/environments/environment.ts",
+        "prod": "./config/environments/environment.prod.ts"
+      }
     }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./config/protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "./.tslintrc.json"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./config/karma.conf.js"
+    }
+  },
+  "component": {
+    "changeDetection": "Default",
+    "flat": false,
+    "inlineStyle": false,
+    "inlineTemplate": false,
+    "spec": true,
+    "viewEncapsulation": "Emulated"
+  },
+  "directive": {
+    "flat": true,
+    "spec": true
+  },
+  "guard": {
+    "flat": true,
+    "spec": true
+  },
+  "interface": {
+    "prefix": ""
+  },
+  "module": {
+    "flat": false,
+    "spec": false
+  },
+  "pipe": {
+    "flat": true,
+    "spec": true
+  },
+  "poll": 0,
+  "serve": {
+    "host": "localhost",
+    "port": 4200,
+    "ssl": false,
+    "sslCert": "ssl/server.crt",
+    "sslKey": "ssl/server.key"
+  },
+  "service": {
+    "flat": true,
+    "spec": true
+  },
+  "defaults": {
+    "styleExt": "scss",
+    "component": {}
+  }
 }
