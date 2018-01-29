@@ -4,7 +4,7 @@
 ## What is a bloc ?
 A bloc is a site area allowing you to package multiple views within an area to deliver it to the site, an area could be a store or a user area , but the architecture of the seed is built upon the bloc architecture.
 
-[![N|Solid](https://github.com/xpologistics/bc-angular-seed/blob/V-2-0-0/src/assets/i/figure1.jpg?raw=true)]()
+[![N|Solid](https://github.com/xpologistics/ng-xpo-seed/blob/V-2-0-0/src/assets/i/figure1.jpg?raw=true)]()
 
 
 Creating a new Bloc

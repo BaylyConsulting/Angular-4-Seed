@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConfigService } from '../core/index';
 
 @Component({
   selector: 'app-root',
@@ -6,13 +7,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  public title: string = 'Bayly Consulting Angular 5 Seed';
+  public cfgSettings: any;
+  public title: string = 'XPO Logistics NG Seed';
   public version: string = 'v2.1.0';
   public headerMenu: any = [];
   public footerMenu: any = [];
 
-  constructor() { }
+  constructor(private configService: ConfigService) { }
 
-  public ngOnInit() {}
+  public ngOnInit() {
+    this.configService.getConfigSettings().subscribe((cfgSettings) => {
+      this.cfgSettings = cfgSettings;
+      this.title = cfgSettings.title;
+      this.headerMenu = cfgSettings.menus.header;
+      this.footerMenu = cfgSettings.menus.footer;
+    },
+    );
+
+  }
 
 }

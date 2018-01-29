@@ -1,7 +1,10 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import {  HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { CoreModule } from '../core/core.module';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpClientModule} from '@angular/common/http';
 import { GatewayInterceptor } from '../core/interceptors/error.interceptor'
 
 // Imports the Main Application Component (This manages the layout for the application)
@@ -15,16 +18,13 @@ import { AppRoutingModule } from './app.routes';
     AppComponent,
   ],
   imports: [
+    BrowserModule,
+    HttpModule
     HttpClientModule,
     CoreModule,
     AppRoutingModule,
   ],
   providers: [
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: GatewayInterceptor,
-      multi: true
-    }
   ],
   entryComponents: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
