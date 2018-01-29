@@ -19,7 +19,7 @@ import { AppRoutingModule } from './app.routes';
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
     HttpClientModule,
     CoreModule,
     AppRoutingModule,
