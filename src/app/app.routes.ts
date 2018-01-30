@@ -7,9 +7,9 @@ import { RouterModule } from '@angular/router';
             {
                 path: '',
                 pathMatch: 'full',
-                redirectTo: '/ex/index',
+                redirectTo: '/home/index',
             },
-            { path: 'ex', loadChildren: 'example.bloc/ex.module#ExampleBlocModule' },
+            { path: 'home', loadChildren: 'home.bloc/home.module#HomeBlocModule' },
             // {path: '**', redirectTo: '/pagenotfound'}
         ]),
     ],
