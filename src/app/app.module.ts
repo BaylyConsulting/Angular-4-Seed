@@ -7,6 +7,12 @@ import { CoreModule } from '../core/core.module';
 import { HttpClientModule} from '@angular/common/http';
 import { GatewayInterceptor } from '../core/interceptors/error.interceptor'
 
+// adding browser animations
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
+// Adding the modules for the material modules we want to use
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+
 // Imports the Main Application Component (This manages the layout for the application)
 import { AppComponent } from './app.component';
 
@@ -23,6 +29,13 @@ import { AppRoutingModule } from './app.routes';
     HttpClientModule,
     CoreModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCheckboxModule,
+  ],
+  exports: [
+    MatButtonModule,
+    MatCheckboxModule,
   ],
   providers: [
   ],
