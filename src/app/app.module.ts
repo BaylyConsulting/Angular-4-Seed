@@ -11,7 +11,7 @@ import { GatewayInterceptor } from '../core/interceptors/error.interceptor'
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 // Adding the modules for the material modules we want to use
-import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import {MatButtonModule, MatCheckboxModule, MatToolbarModule} from '@angular/material';
 
 // Imports the Main Application Component (This manages the layout for the application)
 import { AppComponent } from './app.component';
@@ -36,6 +36,7 @@ import { AppRoutingModule } from './app.routes';
   exports: [
     MatButtonModule,
     MatCheckboxModule,
+    MatToolbarModule,
   ],
   providers: [
   ],
