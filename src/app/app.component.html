@@ -1,8 +1,23 @@
 <div>
   <mat-toolbar color="primary">
-    <span>BC Angular 5 Seed</span>
+    <span>
+      <mat-icon>mood</mat-icon>
+    </span>
+
+    <span>Bayly Consulting Angular 5 Seed</span>
+
+    <button mat-icon-button [mat-menu-trigger-for]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
   </mat-toolbar>
 
+<div align="center">
   <router-outlet></router-outlet>
+</div>
+
+
+  <mat-toolbar color="primary">
+    <span>Bayly Consulting Angular 5 Seed</span>
+  </mat-toolbar>
 
 </div>
