@@ -1,8 +1,8 @@
 <div class="maindiv">
   <mat-toolbar class="header">
     <mat-toolbar-row>
-      <img src="/assets/i/logo.png" height="60" width="60" />
-      <span class="title">bayly consulting</span>
+      <img src="{{ this.logo }}" height="60" width="60" />
+      <span class="title">{{ this.title }}</span>
       <span class="fill-remaining-space"></span>
       <span class="menu">
       <button mat-button [matMenuTriggerFor]="menu">Company</button>
@@ -23,7 +23,7 @@
     </div>
     <footer>
       <div align="center">
-        Version: 2.0
+        Version: {{ this.version }}
       </div>
     </footer>
   </div>
