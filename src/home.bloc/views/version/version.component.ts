@@ -24,6 +24,7 @@ export class VersionViewComponent implements OnInit {
 
     this.configService.getConfigSettings().subscribe((cfgSettings) => {
       this.version = cfgSettings.version;
+      this.title = cfgSettings.title;
     });
   }
 
