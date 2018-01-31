@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Roboto, sans-serif;
+  font-family: Avenir;
 }
 
 mat-card {
@@ -9,13 +9,40 @@ mat-card {
   text-align: center;
 }
 
-mat-toolbar-row {
-  justify-content: space-between;
+.maindiv {
+  min-height: 100vh;
 }
 
-.done {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 94vh;
+}
+
+.content {
+  flex: 1;
+}
+
+.header {
+  height: 80px;
   color: white;
+  background-color: #2E2A2B;
+}
+
+footer {
+  height: 30px;
+  font-size: 10px;
+  color: white;
+  background-color: black;
+  padding-top: 10px;
+
+}
+
+.title {
+  font-size: 26px;
+  color: #318AC5;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: lighter;
+  padding-left: 50px;
 }
