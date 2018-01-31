@@ -1,16 +1,29 @@
 <div class="maindiv">
-  <mat-toolbar class="header"><img src="/assets/i/logo.png" height="60" width="60"/> <span class="title">bayly consulting</span></mat-toolbar>
+  <mat-toolbar class="header">
+    <mat-toolbar-row>
+      <img src="/assets/i/logo.png" height="60" width="60" />
+      <span class="title">bayly consulting</span>
+      <span class="fill-remaining-space"></span>
+      <span class="menu">
+      <button mat-button [matMenuTriggerFor]="menu">Company</button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>HTTP Test</button>
+        <button mat-menu-item>Version</button>
+      </mat-menu>
+    </span>
+    </mat-toolbar-row>
+  </mat-toolbar>
 
-      <div class="site">
-        <div class="content">
-          <div align="center">
-            <router-outlet></router-outlet>
-          </div>
-        </div>
-        <footer>
-          <div align="center">
-            Version: 2.0
-          </div>
-        </footer>
+  <div class="site">
+    <div class="content">
+      <div align="center">
+        <router-outlet></router-outlet>
       </div>
+    </div>
+    <footer>
+      <div align="center">
+        Version: 2.0
+      </div>
+    </footer>
   </div>
+</div>
