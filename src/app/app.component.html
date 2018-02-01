@@ -8,8 +8,9 @@
       <button mat-button [matMenuTriggerFor]="menu">Company</button>
       <mat-menu #menu="matMenu">
           <button mat-menu-item [routerLink]="['./home/index']" routerLinkActive="active">Home</button>
-        <button mat-menu-item [routerLink]="['./home/httptest']" routerLinkActive="active">HTTP Test</button>
+        <button mat-menu-item [routerLink]="['./home/contact']" routerLinkActive="active">Contact</button>
         <button mat-menu-item [routerLink]="['./home/version']" routerLinkActive="active">Version</button>
+        <button mat-menu-item [routerLink]="['./home/httptest']" routerLinkActive="active">HTTP Test</button>
       </mat-menu>
     </span>
     </mat-toolbar-row>
